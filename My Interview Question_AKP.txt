@@ -1,0 +1,99 @@
+Linux
+=========
+
+1) 	How can you run container without docker in linux ?
+2)	what is namespaces and c groups in linux ?
+3)	how to network connection in your linux server ?
+4)	how to check cpu and memory usage in linux ?
+5)	what is average load is in the top command in linux ?
+6)	what is rang of average load in top command in linux ?
+7)	
+
+
+
+Git & Github
+===========
+1) 	difference between git branch and git tags
+2)	what is defference git checkout branch and git checkout tag 
+3)  	difference between git fetch and git merge
+4)	how change commit message which is alrady commited or without deleting commit 
+5)   	what is git stash
+6)	what is git rebase
+7)	what is git cherry pick
+
+
+
+
+Jenkins
+=======
+
+1) 	How many Trigger are Present in Jenkins ?
+2)	suppose you have 2 pipeline in jenkins. How to sync 1st pipeline artifat into 2nd pipeline. how can you make connective between two of them and how to add the stages ? 
+3) 	how to add roles in jenkins. which plugin you are using ?
+4)	what is share libraries ?
+5)
+6)
+
+
+
+Docker
+======
+
+1) differeance between Entry point and cmd ?
+2) 
+3)
+4)
+5)
+6)
+
+
+
+Kubernetes
+===========
+
+1)	if your node attach you kubernetes cluster but it is not ready state how to troubleshoot it ? how you can available for use ?
+2) 	what is HPA Kubernetes ? why we use HPA ?
+3)	why we need node Autoscaler and cluster autoscaler ?
+4)	what is the deffrence between node autoscaler and cluster autoscaler ?
+5)	Defference between VPA & HPA ? which one you recommend to your organization ?
+6)	I'm doing kubectl get node or kubectl get pods and it showing me an error connection refuse and not able give any output like nodes or pods. how to troubleshoot ?
+7)	suppose 5 pods are running and one of the pod is very crucial you need to available that pod is every time. how to achive that ?
+8) 	how to schedule the perticular pod to perticular node ?
+9)	how to check system call in kubernetes ?
+10) 	how to trace kubernetes system components ?
+11)	 whenever request come to my application according to that request my application need to be auto scale. how to setup that using HPA ?  # how to autoscale application on request base 	using HPA in kubernetes ? 
+12) how to store history befor uninstalling helm chart and what is the parameter your are use in runtime ?	
+13) what is helm lint and why we need it ?
+14)	how do you deploying your application in your organization like using helm or argo cd ?
+15)	are you using helm create command or stange in jenkins pipeline  ?
+16)  what is automic parameter and give me the senario i can use that ?
+17)	what is deamon set ?
+18)	
+
+
+
+Promethus & Grafana
+===================
+
+1)	how to depoly promethus in you cluster
+2)	what thing you will configure to track the application ?
+3)	what is the targets in promethus ?
+4)	what is node expoter and how they will export the metrix ?
+5)	
+
+
+
+Terraform
+=========
+
+1)	what is terraform backend ?
+2)	what is terraform taint ?
+3)	How to do state blocking ?
+4)
+5)
+6)
+
+
+
+
+
