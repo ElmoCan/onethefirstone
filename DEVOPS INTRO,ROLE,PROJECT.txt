@@ -1,7 +1,7 @@
 ---------------------------------------------------INTRODUCTION------------------------------------------------------------
 
  
-as you know my name is sultan patel.
+as you know my name is S P.
 i have completed my graduation from walchand college of engineering sangli.
 i am working as a devops engineeer in natiqun technology which is located in pune.
 while starting my caurrier in cloud and devops domain,initially i was worked as junior devops engineer.
@@ -11,8 +11,8 @@ now i have a 3.4 years of experience in cloud administration and devops methodol
 we are using aws cloud platform to manage the whole environment of project.
 while being associated with the project as a devops engineer i got hands on aws services like ec2, VPC, S3, IAM, Cloudwatch and devops tools like git, github,docker, jenkins, terraform and EKS. i also involved in creation of cicd pipelines from scratch and creation of infrastructure.
 
-- As you know My name is Arshad Khan, I have completed my graduation in Computer Science.
-- I have been working with AllOps Technologies since last 3 years as a DevOps Engineer.
+- As you know My name is Ar Kh , I have completed my graduation in Computer Science.
+- I have been working with AI Technologies since last 3 years as a DevOps Engineer.
 - currently i am a part of the team that is responsible for IMPLEMENTING, CONFIGURING and MAINTAING the CICD pipelines.
 - we have to make sure that the code changes is success fully 
 integrated tested and depoyed to the dev - QA and production enviroment
