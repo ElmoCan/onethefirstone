@@ -1,0 +1,213 @@
+1)Tell me about yourself -full hadoop administration
+Answer :- 
+ Thank you for giving me opportuninty to introduce myself.
+ As you know my name is Alfiya Multani.
+ I have completed my Post Graduation from Fergusson College.
+ Currently i am working as Big data admin in product based organization based in Pune.
+ I do have 3 years of experience  
+ Currently i am a part of a team who is responsible for running production grade big data clusters.There I have got the opportuninty to work on hadoop base projects. 
+ We are using AWS cloud environment along with clouderas distribution of hadoop. 
+ While being associated with the company as an admin i got hands on experience in cloud-services like EC2,S3,RDS and VPC and hadoop ecosystem components like hdfs,
+yarn,kafka,sqoop,spark,hive and impala.
+ initially i was working as a associate and was working with our cloud team, there i was responsible to work on AWS services like EC2,VPC, setting virtual firewalls
+ and s3. 
+ When i was a hadoop associate i was taking care of P3 and P4 tickets later on i got promoted as a big data administrator and started working on l2 level.
+ As a big data administrator i am working on P1 and P2 tickets.
+ I have also designed and documented services and successfully installed and configured those as per client requirement and secured them with authentication
+ and authorization mechanism.
+ I am also involved in inter departmental meetings to decide the roadmap of the upcoming projects.
+ my current responsibilities are
+ * Installing clusters
+ * Deploying services as per client requirement
+ * Do Prerequisites
+ * Tuning
+ * Security
+ * Troubleshooting
+ * Develop the document for best practice (RCA documentstions)
+ * Working with vendor to resolve the issue
+ * Cluster Configuraion like HA for YARN and Namenode
+ and my day to day activies is
+ * Login into Hadoop Console
+ * Login into Cloudera admin Console
+ * Monitoring the health of Cluster
+ * Maintaining the logs
+ So yes this was overall about me and my roles thank you.
+
+ 5)What is your greatest strength?
+ Answer:
+My biggest strength is, I have a solid work ethic.
+When I'm working on a project, I don't just want to meet deadlines.
+Rather, I prefer to complete the project ahead of schedule.
+i am always ready to adapt new challange.
+By understanding the challenges from multiple angles, I’m able to connect dots and create solutions.
+
+6)What is your greatest weakness?
+answer:
+well , I am too detail oriented,
+Sometimes I focus soo much on a certain details,
+I am always thinking about the worst condition, so that i can
+tackle that condition in better way.
+
+ 4)Describe your most challenging project?
+ Answer:
+ I remember, when i was working on a project, suddenly client changed the due date and the challenge is to complete that project within 15 days .
+ at that time we worked on weekends also and submitted that project before a day of submission.
+ 
+11)Where do you see yourself in 5 years?
+Answer:
+In the next 5 years, my aim is to continue to build strong
+relationships and trust by establishing myself as an expert in my field. 
+This will require dedicated investment both in and outside of my role
+I have enjoyed owning projects and leading collaborators, and believe that management is the next right path for me.
+
+ 2)Tell me about a time you showed leadership?
+ answer: 
+ I remember the time when some tasks were remaining at my department and I was given the responsibility of asigning those to my team mates and work should be
+ submitted within scheduled deadline.
+ we were facing whether those tasks should be assigned in a parallel or serial manner to achive the goal in less then a limit time.
+ there I noticed that there were no structured way to achieve the scheduled work.The tasks were not getting assigned in a organinzed manner
+.and we were facing the absency of some team member.
+ and needed to align them and get work to be done.So futher i disscussed this issue with operations manager and asked to schedule a meeting
+ and disscuses about how the team can be aligned and 
+ distribute the tasks among and get the project tasks done before the scheduled deadline.And asked them for their opnion.the tasks were of making reports
+ and how to follow a proper 
+documentation for which they will get assigned. I encouraged them to fairly assess their solutions and moderated the discussion so that it stayed productive
+ and respectful.
+ As they laid out their plans, it became clear that a hybrid approach would be best for the company.that by using way of serial and parallel.
+we completed the tasks withing given scheduled limit.
+ 
+ 3)What would your co-workers say about you?
+ answer:
+ As i always try to take care of the people around me and make sure to keep healthy and cooperative environment.
+ My coworkers would describe me as an organized, thoughtful person who works well under pressure.
+ My colleagues regularly comment on my positive attitude and problem-solving abilities
+ 
+
+
+
+7)Why should we hire you?
+answer:
+Well, I have all the skills and experience that you are looking for. and i am quite confident that i would be a perfect fit for this role.
+I have a history of always completing my projects ahead of schedule
+I am self motivated person and i try to exceed company expections with quality work
+Overall, I believe I bring the right mix of skills, experiences and attitude for the job and think that my varied experience can add a lot of value here.
+I would love to join your innovative team, continue to create great work, and grow within the company by learning new skills and it will boost my career.
+
+
+8)Tell me about a time you had to manage conflicting priorities?
+answer:
+yes i remember that movement, It was about the changes to be done in my recent project . client manager and client it self were giving me different suggestions
+ so i was a bit confused to which task should be prioritized first
+I ranked the assignments and figured out how long it would take me to finish them.Then I checked in with my coworkers, clients, and manager to see 
+if the timeline made sense to them and fix the change.Atlast it was done with efficiency and fullfilled the client requirements.
+
+
+10)Why do you want to leave your current role? *
+Answer:
+I enjoy my current role and am not actually actively pursuing a change.
+however I am open to undertake challenging opportunities that will allow me to provide value and add new skills to my profile.
+I am interested in a role where I am responsible to deliver and actively contribute towards company success. 
+I am also seeking continued development and improvement, both personally and professionally. 
+Based on the job description and our discussions, this role does seem like a good match.
+
+
+
+12)Tell me about something you’ve accomplished that you are proud of?
+Answer:
+It was in my comapny some systems were layed in traditional manner which was effecting the performonce and SLA.
+There were errors and inaccuracies, and I took the initiative to implement a new hybrid approach to it .
+Further the implementaion process was discussed by me and my teamlead.The implementaion result was very outstanding.
+which effected our performance match and the output result seem preety much amazing.Overall, we had 25% fewer errors and my team became 30% more efficient.
+That Idea accompalished me a lot.
+
+13)Why do you want to work here?
+Answer:
+I see this opportunity as a way to contribute to an fast-moving company, and I feel I can do so with my skills and experience. I feel my skills are particularly
+ well-suited to this position also help me to acquire experience & sharpen my skills.
+If you give an opportunity to work with your organization, I positively look forward to give my best. that will help me for my future as well as for your organization.
+
+14)Tell me about a time you were successful on a team?
+Answer:
+It was a time I was working with the Architecture of project when the component of one layer need to be implemented.
+I realized that component was not holding much functions and can be mergerged with existing and implemented.
+I did elloborated that ingestion tool will uncessorily increase our project stack will effect ops-ex.
+Further disscusion was with client and client was so impressed.The team thanked me for helping. We also continue to use with
+these tools, and they are what make our team so much more efficient at what we do.
+
+15)What are your salary expectations?
+Answer:
+
+As per market standards usually we get atlest 30% hike. however I understand that as per your company's reputation you will provide me with a decent hike,
+ I am happy to server with a decent hike as per company's Norm..
+
+After researching market ranges from multiple sources online and taking into account my education, experience, and location, 
+I’m targeting roles with base salaries in the range of 15lpa.
+Of course, I’m also taking into account opportunities for long-term growth with an emphasis on purpose-driven work as I evaluate and weigh options — 
+and my values are closely aligned with your
+organization’s mission.
+For this reason, I would be willing to negotiate base salary in exchange for a generous time-off policy. I intend to be a high performing asset to your company, 
+and value time to recharge when appropriate.
+
+16)Tell me about a time you worked with a difficult person?
+Answer:
+It was the time when in a meeting it was issued that some tasks are pending and it assigned to me with my teammate.
+The schedule deadline was assigned with that task and needed fast action to be taken to workout.
+The later i complete the prerequisite of and the report need to be collected from my teammate.
+He used to respond very slow.He was late to provide the documented, and when he did provide it, it was incomplete or inaccurate.
+Without getting the right information from him I knew I wouldn't be able to complete my assignment.we sat for disscusion.
+He shared that he was overwhelmed, as he had multiple competing deadlines, and that there were errors and delays while creating.
+then customized each of my requests in a way that would work with his schedule.And got the work completed.
+
+17)Tell me about a time you disagreed with someone?
+Answer:
+It was time when i was working on recent project.
+I dissagrred with our Teamlead,for a component which will uncessorily increase the workflow and operational cost.
+further I disscused that removing that will be efficient and we can follow the process as planned.
+At that time teamlead was seem to be much impressed by me.
+
+18)Tell me about a time you had to handle pressure?
+Answer:
+while i was working on a project in my company two of my team members suddenly quit thier jobs without saying anything and
+ we had only 3weeks to submitted the project
+so i urgently called team meeting and found out what task were assigned to them .then we shared the important task to each other
+ and we cancled optional task for three weeks . we also work on weekend to complete the project on time. and we did it
+
+19)Tell me about a time you surpassed people’s expectations?
+Answer:
+As a young professional, I was given a small event to manage for my company's senior executives.
+We originally expected about 50 attendees, but then the CEO decided to participate too. 
+Suddenly, the event became much bigger people attending. We had to organize buses, food, scripted content, speeches and the program itself.
+I stepped up and designed carefully crafted messaging documents for each stakeholder; had weekly check-ins with each group;
+ and ran volunteer training sessions to be sure that all the logistics ran smoothly.
+I learned the importance of careful planning and constant practice; two habits that paid off on many projects since then. 
+The event is now considered the most successful of our division. My boss praised my work for going far beyond what she expected when the project was first assigned
+
+20)Tell me about a time you had to persuade someone?
+Answer:
+no sir there have never been such a moment in my life
+
+21)Tell me about a time you failed or made a mistake?
+Answer:
+when starting a job if the manager gave me some work i would always say yes to them because I wanted to do everything my manager asked me to do.
+But as I started working on the project, I realized I didn't understand the overall goal. And the project ended up creating templates that didn't meet my manager's expectations.
+My manager was disappointed in me. he told me that if I had asked some clarifying questions, I would've gotten to a better work product.
+I learned that it's better to speak up quickly. That's how I've handled those situations ever since.
+ 
+
+23) Any que for me
+I have 3 que for you
+How do you see the company evolving over the next five years
+What can I do in this role to help you achive your vision
+What the cluture like within the company
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

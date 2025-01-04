@@ -1,0 +1,21 @@
+intro
+roles and res
+how many nodes of cluster you have ?
+how many microservices you have?
+what is docker network ?
+what are code quality matrics set (sonarqube) in your organization ?
+tell me about your CICd flow ?
+how many environments you have ?
+and what is specification fo each environment?
+how do you resove a issue of merge conflict ?
+types of loadbalancers ?
+what is your deployment stretagy ?
+You have newly joined a company and company is also new to the kubernetes 
+and now you have to deploy to kubernetes 
+and as a infra admin 
+how do you know how many resources you need for an application? 
+
+
+amandeep 
+
+

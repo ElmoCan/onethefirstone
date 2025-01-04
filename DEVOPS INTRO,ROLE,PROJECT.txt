@@ -1,0 +1,64 @@
+---------------------------------------------------INTRODUCTION------------------------------------------------------------
+
+ 
+as you know my name is sultan patel.
+i have completed my graduation from walchand college of engineering sangli.
+i am working as a devops engineeer in natiqun technology which is located in pune.
+while starting my caurrier in cloud and devops domain,initially i was worked as junior devops engineer.
+In that role i worked on various skillset like aws services and devops tools.
+after that i got promoted to devops engineer role where i got the strong exposure on cicd pipeline,microservices and infra structure as a code.
+now i have a 3.4 years of experience in cloud administration and devops methodology.
+we are using aws cloud platform to manage the whole environment of project.
+while being associated with the project as a devops engineer i got hands on aws services like ec2, VPC, S3, IAM, Cloudwatch and devops tools like git, github,docker, jenkins, terraform and EKS. i also involved in creation of cicd pipelines from scratch and creation of infrastructure.
+
+- As you know My name is Arshad Khan, I have completed my graduation in Computer Science.
+- I have been working with AllOps Technologies since last 3 years as a DevOps Engineer.
+- currently i am a part of the team that is responsible for IMPLEMENTING, CONFIGURING and MAINTAING the CICD pipelines.
+- we have to make sure that the code changes is success fully 
+integrated tested and depoyed to the dev - QA and production enviroment
+- configuring and managing deployment throw yaml configurations.
+-  monitoring the application server using prometheus and grafana 
+and used multiple service like ansible docker kubernetes git github argocd for gitops based deployment 
+we are using AWS enviroment along with that i have good knowledge on ec2 vpc iam s3 eks
+
+
+---------------------------------------------------ROLES AND RESPONSIBILITIES------------------------------------------------------------
+
+
+further talking about my responsibilities in my project
+
+i need to make sure CICD pipeline is always up and running
+i also manage and create the infrastructure as per the requirement using terraform
+also monitoring the resource utilization of the AWS services for cost optimization. 
+i also responsible for creation of snapshot and data loss prevention
+also responsible for managing and creating docker images,docker container and integrate it into cicd process
+we are using service now as a ticketing tool so get the variety of ticket as a daily basis it my core responsibility to work on those ticket and taking care of pipeline and infrastructure resources.
+so working on high priority incident ticket with given SLA
+also working on problem ticket to avoid the recurring incident and provide the Root Cause Analysis
+also working on change and Service Ticket
+
+apart from that me my collegue discuss about what are the issues we are facing and what are the solutions for that and we make sure to update the solution in portal so next time if we face same issue we dont waste our time to find out the solution
+apart from that i also collaborate effectively with different businesses like development team,testing team and operation team and trying to resolve whatever issues they are facing.
+in our organization i learn various diverse skill set not only technical side but soft skills also suh as collaboration,team work and co-ordination
+
+
+
+---------------------------------------------------PROJECT ------------------------------------------------------------
+
+
+futher moving to project we have US based client in ecommerce domain our client has the java based web application which is running on kubernetes cluster.
+devloper team writes the code and push the code in github repository which serves as a central version conntrol system for the project.jenkins is configured to monitor the git repository for commit change.after detecting the change in commit in github repository jenkins automatically trigger the job with the helpof webhook.
+jenkins pulls tthe code,commpiles it and runs the unit test and run a build task with the help of maven and all these stages predefined in jenkinsfile.
+sonarqube is used for staticcode analysis to analyse the code quality and and to identify the bugs.
+if the build and test are successfull,jenkins generates the artifact and docker image and pushes into jfrog artictory.
+
+now comes to cd part of project
+once the docker image is ready then it is used for deployment
+jenkins continuously monitor differet repo which contains kubernetes mannifesto files.
+kubernetes menifesto file are generated for specifying desire state of application.
+jenkins compares the desire state with current state of kubernetes cluster.it deploys the necessary resources to match the desire state
+
+lets come to monitoring mechanism
+in our organization we use grafana as a visualization and monitoring tool wich is integrated with promethus to creat a dashboard and visualize the collected matrics
+prometheus collects the matrics form EKS cluster and send back to grafana for visualzation.
+

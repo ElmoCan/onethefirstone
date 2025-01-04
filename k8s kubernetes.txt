@@ -1,0 +1,357 @@
+.KUBERNETES
+----------
+1. Whatis difference between replica set & deployments?
+2. what is service and what are service types?
+3. what is taints & toleration?
+4. what feilds are needed in yaml file, when you use ndoe port in service?
+5. what is port, target port, node port?
+6. what are affinity rules, what feilds you give in yaml for node affinity?
+7. what are the different types of health checks?
+8. what are daemon sets?
+9. 
+
+KUBERNETES
+----------
+1. How to restrict pod to pod communication?
+
+2. What is Taints & toleration?
+
+3. How is Node selector different from node affinity from pod affinity?
+
+4. What are probes. How many different types of probes are there?
+
+5. Use case of daemon set?
+
+6. Different deployment strategy & difference between them?
+
+7. How is role binding different from cluster role binding?
+
+8. What is init container?
+
+9. What is the role of scheduler?
+
+10. what are components in K8 master?
+
+11. What is the role of kubelet?
+
+12. What is the role of kubectl?
+
+13. What is pod?
+
+KUBERNETES
+----------
+1. What are componenets of K8 cluster?
+
+2. What is the use of scheduler?
+
+3. What is kubelet
+
+4. What is Multi container pod?
+
+5. What is init container?
+
+6. what are taints & tolerations?
+
+7. What are network policies? How do you implement it? How the pod is attached to network policy
+
+8. If deployment is failing, what could be the possible reasons?
+
+9. What is the backup solution for kubernetes
+
+10. You are doing rolling update strategy, when bringing new pod. its not coming up. users are facing issues. How can you resolve it
+
+12. what are liveness probe and readiness probe?
+
+13. How you are doing monitoring & logging in kubernetes
+
+14. If there are 3 services running, frontend, middleware & backend in K8 cluster. I want frontend not to communicate with backend. how can i achieve that?
+
+KUBERNETES
+----------
+1. What is Kube-Proxy?
+
+2. Components of Worker Node?
+
+3. Which deployment strategy used in K8?
+
+4. What is Canary Deployment?
+
+5. What is side car container
+
+6. What is pod eviction?
+
+
+
+KUBERNETES
+----------
+1. What are the various objects used in k8 so far?
+
+2. Four main componets used to write in a kubernetes manifest file?
+
+3. I have a pod & create a service object. How service will identify the pod to route the traffic?
+   #using label selector
+
+4. Main components of Master node & worker nodes?
+
+5. Why cant we hav workloads on master?
+
+6. Can we untaint the master node?
+
+7. What are taints & tolerations. Where do we apply them?
+
+8. What is node affinity?
+
+9. I have a deployment with 5 replicas, How do you scale from 5 to 10?
+
+KUBERNETES
+----------
+1. Differnce between master node & worker node?
+
+2. Where is the configuration of worker nodes stored?
+
+3. I have 3 replicas, 1 pod is down. how it will come?
+
+4. What is kubectl?
+
+5. What is use of kube-proxy
+
+6. How can you mount the volumes to pods?
+
+7. What is static pod &dynamic pod?
+
+8. What is Daemon set?
+
+9. What are stateful sets in k8s?
+
+10. Difference between pod & container?
+
+11. What is headless service
+
+
+
+Kubernetes:
+1) What is the architecture of kubernetes
+2) What does control manager, etcd, scheduler, API server do
+3) What is a manifest file and what are the components of it
+4) What is node affinity, pod afiinity , taint toleration
+5) What is node port, cluster ip
+6) What is persitant volumes and why we use it
+7) Describe what is pod and what is pod lifecycle
+8) What are the components on master and worked node
+9) What is ingress controller
+10) What are types of services in kuberntes
+11) How one pod talks with other pod
+12) How the pod healcheck is done(describe rediness, livesness)
+13) How the monitoring is done(integration on Prometheus and grafana)
+14) What is deamonset, replicaset, horizontal pod autoscaler
+15) Write a manifest file of your own choice
+16) What is namespace and why we use it
+17) What are helm charts and uses
+
+
+Velatio:-
+1) Difference between CMD and entry point
+2)why we use labels in dockerfile?
+3)let's suppose I have created Eks cluster and you have full permission still you are not able to access it. I have shared the kubeconfig file also with you, what is the problem?
+4)what is workspace in Terraform?
+5) difference between nacls and security group
+6)what kubelet does?
+7) difference between nlb and alb
+8)how you manage rbac in Jenkins?
+9) prepare one script for automatic creation of email ids from a file containing the names of employees
+
+Clockhash:-
+1) how to check the running processes on linux
+2)have you check or monitor the running processes on linux
+3)what lsop command do?
+4)how to check docker logs ?
+5) difference between configmap and secrets
+6) different between add and copy command
+7)what is pid and uid?
+8)how to check open ports on linux?
+9)how to bind docker volumes
+10)how to add stages in Jenkins?
+
+Treebo:-
+1)How you do your observability?
+2)what is the use of Elasticsearch?
+3)if the response from db is taking time how you ll trouble shoot that?
+4)what are all the metrics you collect from k8s?
+5)if i/o of Elasticsearch was 10 and suddenly increase
+6)what is sla and slo?
+7)how do you define slos and slas for different tools and around the team?
+8)have you been in the discussion of defining slas and slos?
+
+Vauld-
+1)what is VPC?
+2)what is shared libraries in Jenkins?
+3)which groovy script you have written recently?
+4)what is for each attribute in Terraform?
+5)what is null resource in Terraform?
+6)what is module in Terraform?
+7) steps to create the infrastructure using Terraform?
+8)what is difference between got fetch and git pull?
+9)which are different types of resources you have provision using Terraform?
+
+Sourcefuse technologies:-
+1)what is microservice?
+2)what is hpa and vpa?
+3)which lb you used for ingress?
+4) difference between ebs and efs?
+5)how your developer access to the db?
+6) difference between root user and power user?
+
+
+Explain what Kubernetes is.
+What does K8s mean?
+Explain what orchestration means and how it relates to DevOps.
+Why is container orchestration important?
+How does Kubernetes make deployment in containers easier?
+How is host application deployment different from container application deployment?
+Explain what the GKE is.
+What is Prometheus?
+What objects can you use in Kubernetes?
+What are stateful sets?
+What is Kubectl?
+Name some crucial Kubectl commands.
+Name the main pod types in Kubernetes.
+What does persistent volume mean?
+Which tools does Kubernetes use to do container monitoring?
+Explain how Kubernetes is related to Docker.
+Name some differences between Kubernetes and Docker Swarm.
+Explain some of the advantages of Kubernetes.
+Explain some of the disadvantages of Kubernetes.
+Name some of the main Kubernetes features.
+Name two main Kubernetes architecture components.
+Why are cloud system administration skills important for Kubernetes developers?
+Why are programming skills important for Kubernetes developers?
+
+What are the main recommended Kubernetes security measures?
+Which method would you use to set up a static IP for load balancers?
+What are the critical components of a node status in Kubernetes?
+What does the deploying applications process involve in Kubernetes?
+Explain what a replica set does.
+Explain what a replication controller does.
+Explain the difference between replica sets and replication controllers.
+How can an organization enhance the efficiency of its technical operations and keep costs low using Kubernetes?
+How would you help an organization change its deployment strategy with Kubernetes and build a more scalable platform?
+How can Kubernetes help with workload distribution optimization?
+
+
+
+
+
+------------------------------------
+********real time course************
+------------------------------------
+
+1) what are all component of master node
+
+what all component of worker node
+
+If scheduler went down then what are the impact over existing application  - no impact
+
+If etcd went down then what are the impact over existing application - no impact
+
+If etcd went down then what are the impact over existing application when it restart - i will be impact
+
+6) if kubelet down then what are the impact - pod will be impacted
+
+which conatiner runtime we are using in our infrastructure - containerD
+
+what is kube-proxy
+
+What is daemon set
+
+10) what is diffrence between deployment and statefulset
+
+What is difference between docker swarm and kubernetes
+
+What are main parameter we have to define in pod yaml file ?
+
+which type of application running in your env - mysql...atlas...busybox...elastich seacrh...
+
+what are the command to uodate image in deployment - kubectl set image deployment/my-deployment mycontainer=myimage:1.9.1
+
+15.How do we roll back application when we are doing upgradation ?
+
+How many types of service
+
+what are difference between clusterIp and NodePort IP
+
+What are the range of NodePort service
+
+What is config map and why do we use
+
+20)What is secret and why do we use
+
+How many types of secret
+
+How do we extend size of existing PV
+
+do we require downtime durung extend pv --- Yes we require
+
+config map update - we need downtime,,..we have only restart pod
+
+25.If pod down how do we fix
+
+If PVC are in pending state then how do we fix
+
+If Pod are getting imagePullBack off error  then how do we fix
+
+If storage class is missing do we create PVC
+
+If we delete pod then pv is also deleted  -- No its deleted 
+
+30.if pvc deleted then corresponding pv is also deleted? its depeend upon reclaim policy...if reclaim policy would be delete then automati would be deleted  
+                                                         if reclaim plocy would be Retain then pv would not be deleted , we have manually deleted
+
+I am not able to extend persistent volume , how do we fix ?  
+
+Pod and stuck terminating state how do we delete permanently ?
+
+sometime we are trying to delete namespace but it stuck in terminating state , how do we fix ?
+
+Have you done AKS cluster upgradation, explain it all process ?
+
+What all challenges you have faced during upgradation and how do you fix those issue ?
+
+How do we take backup and restoration of namespace and pod backup ?
+
+Our var/lib/docker filesystem has been full, how do we fix this issue
+
+How do we assign permision over namespace and cluster level access
+
+what is cordon and drain 
+
+40.I want to restrict pod on a particular node how do we acheive
+
+i want not not schdule any pod on a particular worker node --- taint and toleration
+
+What type of issue you have faced in your project
+
+what is taint and toleration
+
+i want a not any single pod will schdule on worker node  - using taint and toleration
+
+how do we secure our cluster
+
+How do we assign permission on a particular namespace
+
+What is Role and Cluster Role
+
+What is Role Binding and Cluster Role binding
+
+What is HPA and VPA
+
+50.How to we autoscale our cluster
+
+How do we take backup of etcd
+
+What is readiness and liveness
+
+53.What is init container
+
+
+
+

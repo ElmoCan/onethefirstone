@@ -1,0 +1,67 @@
+Thanks me later -- > Question: When you created the environment using Terraform, what components did you create using Terraform?
+
+Answer: I created resource groups, storage accounts, network security groups, application gateways, and VMs using Azure providers. While Terraform supports different providers like GCP or AWS, I used Azure since I have experience with it.
+Question: How can you make changes in the configuration of already created resources using Terraform?
+
+Answer: To make changes in the configuration of already created resources, we can use the terraform import command.
+Question: What does Terraform do with the state file when it runs?
+
+Answer: Terraform maintains a state file that maps the current status of the infrastructure with the configuration file. The state file is commonly stored either locally or in remote storage locations like Azure Storage or AWS S3.
+Question: In case the state file is lost, how do you resolve that issue?
+
+Answer: If the state file is lost, using the terraform import command can help. It allows Terraform to reconcile the cloud infrastructure state with the expected state.
+Question: What are the major features of Terraform that you find noteworthy?
+
+Answer: Terraform can manage infrastructure across multiple cloud platforms (Azure, GCP, AWS), uses HashiCorp Configuration Language (HCL), supports infrastructure code, and allows tracking resource changes throughout deployments.
+Question: What is the full form of HCL?
+
+Answer: HCL stands for HashiCorp Configuration Language.
+Question: Can you explain the purpose of the terraform validate command?
+
+Answer: The terraform validate command is used to validate the syntax of Terraform files, performing a syntax check to identify errors in the configuration.
+Question: What is the lifecycle block in Terraform?
+
+Answer: The lifecycle block is a nested block within a resource block, containing meta-arguments for resource behavior, such as create_before_destroy, prevent_destroy, and others.
+Question: Have you worked with other tools like CloudFormation or Ansible?
+
+Answer: Yes, I have worked with Ansible. When comparing Terraform and Ansible, the choice depends on the specific needs and the nature of the infrastructure.
+Question: If given a choice between Ansible and Terraform, which one would you prefer, and why?
+
+Answer: The choice between Ansible and Terraform depends on the specific needs. Terraform is suitable for maintaining a steady state in infrastructure, while Ansible excels in managing and configuring evolving environments.
+Question: Have you heard about Pulumi?
+
+Answer: Yes, I have heard about Pulumi. One notable feature is that Pulumi allows using multiple languages like Python, TypeScript, or JavaScript for configuration.
+Question: Have you heard about Bicep or ARM templates?
+
+Answer: Yes, I have heard about Bicep, and I have worked on ARM templates in the past.
+Question: Is it possible to destroy a single resource out of multiple resources using Terraform?
+
+Answer: Yes, it is possible. We can use the terraform destroy -target command followed by the resource type and name to destroy a specific resource.
+Question: How do you preserve keys created using Terraform?
+
+Answer: Keys created using Terraform can be preserved by storing them in the AWS CLI configuration folder under the credentials directory and instructing Terraform to use a specific profile during execution.
+Question: What happens if the Terraform state file is accidentally deleted?
+
+Answer: If the Terraform state file is deleted, Terraform may duplicate all resources, leading to increased costs and potential issues with overlapping and cross-pollination between resources.
+Question: Have you worked with Terraform modules?
+
+Answer: Yes, I have worked with Terraform modules. There are root modules, child modules, and published modules in Terraform.
+Question: How do you manage Terraform code in multiple environments?
+
+Answer: Terraform workspaces and reusable modules can be used to manage Terraform code in multiple environments, allowing separate state files for each workspace.
+Question: What is Terraform workspace used for?
+
+Answer: Terraform workspace allows managing separate state files for each workspace, enabling different environment processing.
+Question: How do you provide variable values at runtime in Terraform?
+
+Answer: To provide variable values at runtime in Terraform, the default values in the variable file (variable.tf) can be removed, and the values can be provided when running the Terraform command.
+Question: Why is Terraform called "Infrastructure as Code"?
+
+Answer: Terraform is referred to as "Infrastructure as Code" because it involves writing code to provision, manage, and deploy infrastructure. It uses a declarative approach to define infrastructure elements using HashiCorp Configuration Language (HCL).
+
+Question: Can you mention some drawbacks of Terraform based on your experience?
+
+Answer: Some drawbacks include a lack of error handling, restriction to a specific language (HCL), limitations on importing certain things, lack of script generation support, and occasional bugs in specific Terraform versions.
+Question: In your organization, which version of Terraform are you currently using?
+
+Answer: Currently, we are not using Terraform in our organization.
