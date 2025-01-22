@@ -1,0 +1,183 @@
+Docker 
+
+1. Difference between a Docker container and a Virtual Machine
+A Docker container is a lightweight, portable unit that encapsulates an application and its dependencies. It shares the host OS kernel but runs in isolated user spaces. Containers are typically more resource-efficient and start faster.
+
+A Virtual Machine (VM) is a full operating system that runs on top of a hypervisor (like VMware or VirtualBox) and uses its own kernel. VMs are heavier and require more resources (CPU, memory) because each VM includes a complete OS, unlike containers that share the host OS kernel.
+
+Key differences:
+
+Containers share the host OS kernel, while VMs run their own kernel.
+Containers are lightweight and fast to start; VMs are heavier and take longer to boot.
+Containers are typically smaller in size compared to VMs.
+2. How would you ensure a Docker container starts automatically when the Docker host restarts?
+You can ensure a Docker container starts automatically by using the --restart flag when running a container. The --restart flag can be used with the docker run command to specify restart policies:
+
+bash
+Copy
+docker run --restart unless-stopped -d my-container
+Restart Policies:
+
+no: Do not restart the container.
+always: Restart the container if it stops.
+unless-stopped: Restart the container unless it is explicitly stopped by the user.
+on-failure: Restart the container only if it exits with a non-zero status.
+You can also set this policy in a Docker Compose file under restart.
+
+3. Purpose of a Docker Compose file and example scenario
+A Docker Compose file (docker-compose.yml) is used to define and manage multi-container Docker applications. It allows you to define all the services (containers), networks, and volumes in a single YAML file and then spin up all those services with a single command (docker-compose up).
+
+Example Scenario: Suppose you're deploying a web application with a frontend, backend, and a database. You can use Docker Compose to define the containers and their relationships.
+
+yaml
+Copy
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+  app:
+    image: myapp
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+With this Compose file, running docker-compose up will start the web, app, and db containers together, each linked and configured as per the file.
+
+4. What is a Docker image and how is it different from a Docker container?
+A Docker image is a blueprint or template used to create containers. It contains the application code, libraries, dependencies, and configuration files needed for the application to run.
+
+A Docker container is an instance of a Docker image that is running in an isolated environment. It represents a running application or service based on the image.
+
+Difference:
+
+The image is static and unmodifiable, while the container is dynamic and represents a running instance of the image.
+5. Can you make changes to an existing Docker image?
+You cannot directly modify an existing Docker image. However, you can:
+
+Create a new container from the image.
+Make changes inside the running container (e.g., install packages, modify files).
+Create a new image from the modified container using the docker commit command:
+bash
+Copy
+docker commit <container_id> new_image_name
+A better approach is to create a Dockerfile based on the original image, make changes, and build a new image from that.
+
+6. How to create a new Docker image from an existing image?
+To create a new image from an existing one, you can:
+
+Write a Dockerfile based on the existing image:
+
+dockerfile
+Copy
+FROM existing_image
+RUN apt-get update && apt-get install -y new_package
+Build the new image:
+
+bash
+Copy
+docker build -t new_image_name .
+This approach allows for repeatable and versioned builds.
+
+7. Networking modes that Docker has
+Docker offers several networking modes:
+
+Bridge (default): Containers are connected to a private internal network on the host, and they can communicate with each other. External communication is done via port mapping.
+Host: The container shares the host’s network namespace, meaning it directly uses the host’s IP address.
+None: The container is not connected to any network, and you must manually configure network interfaces.
+Container: Containers share the network namespace of another container, allowing them to communicate as though they are the same container.
+Overlay: Used in Docker Swarm, this network mode allows containers on different hosts to communicate securely.
+8. Scenario: Jenkins container restart issue
+If a container running Jenkins is restarted, and you no longer see your Jenkins configuration or jobs, it could be because Jenkins' data is not persistent. By default, a container's file system is ephemeral, meaning any data inside the container is lost when it restarts.
+
+To solve this, you should mount a Docker volume for Jenkins' data to persist:
+
+bash
+Copy
+docker run -v /path/to/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+This ensures that Jenkins' data (like job configurations, plugins, etc.) is saved on the host machine and can survive container restarts.
+
+9. Docker volumes and their importance in data persistence
+Docker volumes are used to persist data in a Docker container, even after the container is deleted or recreated. Volumes are stored outside the container’s filesystem, typically in a managed location on the host system, which means they persist beyond the lifecycle of a container.
+
+Importance:
+
+Volumes allow for data persistence, enabling you to maintain data between container restarts.
+They are more efficient than using bind mounts because Docker manages the volume's storage location and permissions.
+10. Troubleshooting Docker container startup issues
+Steps to troubleshoot a container that does not start correctly:
+
+Check container logs: Use docker logs <container_id> to view the logs and identify errors.
+Inspect the container: Use docker inspect <container_id> to see the container's configuration and environment variables.
+Check Docker daemon logs: Use journalctl -u docker (on Linux) to check Docker service logs for potential issues.
+Verify resources: Ensure there are sufficient resources (CPU, memory, disk space) available on the host.
+Try restarting the container: Sometimes, restarting with docker restart <container_id> can resolve transient issues.
+Check container dependencies: Ensure other dependent services (like databases or external APIs) are accessible.
+11. Have you worked on Docker Swarm?
+Yes, I’ve worked with Docker Swarm to orchestrate containerized applications in a cluster. Swarm provides built-in load balancing, service discovery, and fault tolerance. It also allows defining multi-node setups where you can scale your services horizontally by adding more nodes to the swarm cluster.
+
+Key Features:
+
+Service Scaling: Scale services up or down with a single command (docker service scale).
+High Availability: Automatically restarts containers and reschedules them across nodes if a failure occurs.
+Load Balancing: Distributes traffic evenly across containers.
+12. How do you secure Docker containers?
+Best practices to secure Docker containers:
+
+Use minimal base images (e.g., alpine) to reduce the attack surface.
+Run containers with least privilege: Avoid running containers as root. Use the --user flag to specify non-root users.
+Limit container capabilities: Use Docker's --cap-drop and --cap-add options to remove unnecessary privileges.
+Use Docker Content Trust (DCT): Enable DCT to ensure the authenticity of images being pulled.
+Keep the host system secure: Use firewalls and security updates on the Docker host.
+Use Docker secrets for storing sensitive data like API keys and credentials.
+13. How do you check the health of containerized applications?
+To check the health of containerized applications:
+
+Health Checks: Define health checks in the Dockerfile (HEALTHCHECK directive) to monitor container status. Docker will periodically test if the container is healthy (e.g., checking if a service is running inside the container).
+
+Example Dockerfile:
+
+dockerfile
+Copy
+HEALTHCHECK CMD curl --fail http://localhost:8080/ || exit 1
+Monitoring Tools: Use tools like Prometheus, Grafana, or Datadog to monitor containers and collect metrics (CPU, memory, uptime, etc.).
+
+Docker stats: Use docker stats <container_id> to monitor real-time resource usage of a container.
+
+14. Have you worked with Docker multi-stage builds?
+Yes, Docker multi-stage builds allow you to create smaller, more efficient Docker images by using multiple FROM statements in the same Dockerfile. You can have a build stage to compile or package the app and a final stage to copy only the necessary artifacts into a smaller runtime image.
+
+Example Scenario: Building a Go app
+
+dockerfile
+Copy
+# Build stage
+FROM golang:1.16 AS builder
+WORKDIR /go/src/myapp
+COPY . .
+RUN go build -o myapp
+
+# Final stage
+FROM alpine:3.13
+WORKDIR /root/
+COPY --from=builder /go/src/myapp/myapp .
+CMD ["./myapp"]
+This results in a smaller image because only the compiled myapp is copied into the final image, not the entire build environment.
+
+15. Canary deployment strategy using Docker
+A Canary deployment strategy involves rolling out a new version of an application to a small subset of users first (the "canaries") before gradually rolling it out to the rest of the users.
+
+In a Docker environment, this can be done by:
+
+Deploying the new version of the container to a subset of instances.
+Using a load balancer to route a small percentage of traffic to the new version.
+Gradually increasing traffic to the new version if no issues are found.
+For example, with Docker Swarm, you can scale the old service down and the new service up gradually:
+
+bash
+Copy
+docker service scale myapp-old=5 myapp-new=1
+This way, only 1 replica of the new service receives traffic at first, while 5 replicas of the old service handle most traffic. If everything works fine, you scale up the new service and scale down the old one.
