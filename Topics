@@ -181,3 +181,54 @@ bash
 Copy
 docker service scale myapp-old=5 myapp-new=1
 This way, only 1 replica of the new service receives traffic at first, while 5 replicas of the old service handle most traffic. If everything works fine, you scale up the new service and scale down the old one.
+
+Kubernates
+
+1. "Can you please give me a brief introduction about yourself?"
+Purpose: This is an introductory question, aimed at understanding your background, experience, and overall fit for the role.
+Tip: Focus on your professional experience, key skills (especially relevant to DevOps, Kubernetes, Docker, etc.), and any notable achievements. Keep it concise but highlight your expertise in DevOps, cloud platforms, Kubernetes, and any relevant technologies.
+Example Answer: "I have four years of experience in DevOps, primarily working with cloud-native technologies like Kubernetes, Docker, and CI/CD pipelines. I've implemented automated deployment solutions using Kubernetes in cloud environments (AWS/GCP), managed containerized applications, and optimized infrastructure for scalability and performance. I'm passionate about improving deployment workflows and ensuring high availability and fault tolerance in production environments."
+
+2. "So, your total years of experience is four years, right?"
+Purpose: This is just a verification question. Be prepared to confirm your experience, and briefly mention your core expertise.
+Example Answer: "Yes, that's correct. Over the past four years, I have gained substantial experience in DevOps practices, focusing on containerization, orchestration with Kubernetes, and CI/CD automation."
+
+3. "So, I'll start with a scenario-based question. Consider a company built on some kind of Monolithic architecture. How do you think the company should shift from monolithic to microservices and how can they implement Kubernetes in it?"
+Purpose: This question tests your understanding of microservices, Kubernetes, and how to migrate from monolithic architectures to cloud-native solutions.
+Tip: Talk about the need for scalability, resilience, and flexibility. Explain how Kubernetes helps in managing microservices by automating scaling, rolling updates, and service discovery.
+Example Answer: "Shifting from a monolithic architecture to microservices involves breaking down the application into smaller, independently deployable services. First, the company should identify the boundaries of these services and migrate them incrementally, focusing on loosely coupled services. Kubernetes plays a critical role in this transition by offering orchestration, scaling, and management of these microservices. With Kubernetes, we can deploy each microservice as a container, scale them individually, and ensure fault tolerance and automated recovery in case of failure."
+
+4. "Can you explain the Kubernetes architecture?"
+Purpose: This is a core technical question to test your knowledge of Kubernetes architecture.
+Tip: Be clear and concise in explaining the key components such as Master Node, Worker Nodes, Pods, Services, etc.
+Example Answer: "Kubernetes follows a master-worker architecture. The Master Node manages the cluster, controlling the overall state of the system. Key components of the master node include the API Server, Controller Manager, Scheduler, and etcd (a key-value store for cluster state). The Worker Nodes host the containers and are responsible for running the actual workloads. Each worker node contains a kubelet (to maintain the node), kube-proxy (for network routing), and Container Runtime (such as Docker). Kubernetes ensures high availability, scaling, and self-healing of applications."
+
+5. "So, there is something known as Docker Swarm. Have you heard about it? Why should I choose Kubernetes, and why shouldn't I go with Docker Swarm?"
+Purpose: This tests your knowledge of container orchestration tools.
+Tip: Discuss the advantages of Kubernetes over Docker Swarm, such as scalability, flexibility, and better ecosystem support.
+Example Answer: "Yes, Docker Swarm is a container orchestration tool, but Kubernetes offers more advanced features for managing large-scale distributed systems. Kubernetes provides a larger ecosystem, supports declarative configurations, and offers better scaling, networking, and resource management. Unlike Docker Swarm, Kubernetes has a richer set of tools for monitoring, auto-scaling, self-healing, and rolling updates. While Docker Swarm is easier to set up and more lightweight, Kubernetes is more robust for handling complex, large-scale environments."
+
+6. "Based on the first question about monolithic and microservices architecture, how can your company or you solve the deployment problem on the DevOps side?"
+Purpose: This question explores how you manage deployment complexities when transitioning to microservices.
+Tip: Focus on automation, continuous integration/continuous deployment (CI/CD), and container orchestration with Kubernetes.
+Example Answer: "To address deployment problems, I would set up a robust CI/CD pipeline that automates the build, test, and deployment of microservices. We could use tools like Jenkins, GitLab CI, or CircleCI to automate the entire process, ensuring smooth deployments with no downtime. By containerizing each microservice and orchestrating them using Kubernetes, we can handle rolling updates, auto-scaling, and quick rollbacks, ensuring seamless deployment processes even during transitions."
+
+7. "What are all the services that you have worked on in Kubernetes, and can you explain a few of them?"
+Purpose: Tests your practical experience with Kubernetes services.
+Tip: Mention key Kubernetes components you've worked with, such as Pods, Deployments, Services, and Ingress.
+Example Answer: "I have worked with various services in Kubernetes, including Pods, Deployments, ReplicaSets, Services, and Ingress controllers. Pods are the smallest deployable units in Kubernetes, and Deployments ensure the desired state of these Pods. Services allow for stable networking between Pods, and Ingress controllers manage external access to the services, typically through HTTP/HTTPS routing."
+
+8. "Consider your company; your manager wants to optimize the distribution of workloads. How can Kubernetes be helpful over here?"
+Purpose: Evaluates how Kubernetes can optimize workload distribution and resource utilization.
+Tip: Discuss concepts like resource requests/limits, auto-scaling, and load balancing.
+Example Answer: "Kubernetes optimizes workload distribution by allowing you to define resource requests and limits for each pod, ensuring that workloads are distributed efficiently across the nodes. Kubernetes can also auto-scale workloads based on resource usage, scaling up or down depending on demand. Additionally, Kubernetes ensures high availability by balancing the load across replicas of services, improving both performance and fault tolerance."
+
+9. "You were talking about a load balancer. What do you understand by a load balancer in terms of Kubernetes only?"
+Purpose: This question tests your understanding of load balancing in a Kubernetes environment.
+Tip: Discuss the Kubernetes Service resource and Ingress.
+Example Answer: "In Kubernetes, a Service acts as a load balancer that distributes traffic to the pods. The default service type, ClusterIP, exposes the service within the cluster, while NodePort and LoadBalancer expose it externally. Additionally, Ingress controllers can be used to provide more advanced load balancing and routing capabilities, including SSL termination and URL path-based routing."
+
+10. "Have you ever heard about an application known as Quick Ride? How do you think your organization or you can suggest that the company will deal with the servers and their installation using Kubernetes?"
+Purpose: Tests your ability to provide Kubernetes-based solutions for server management and installation.
+Tip: Discuss how Kubernetes can help with server automation, scalability, and management.
+Example Answer: "Yes, I’m familiar with ride-sharing applications like Quick Ride. For managing servers and their installations, Kubernetes would be a great fit. By containerizing the backend services (like user management, ride matching, etc.) and deploying them on Kubernetes, we can easily manage the scalability, availability, and fault tolerance of these services. Kubernetes would automate the scaling of pods based on traffic, handle rolling updates, and ensure high availability through replication."
